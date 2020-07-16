@@ -8,7 +8,7 @@ const AppNavbar = () => {
 
 	return (
 		<div>
-			<Navbar color='dark' dark>
+			<Navbar color='info' dark>
 				<NavbarBrand href='/'>KanyeDB</NavbarBrand>
 				<NavbarToggler onClick={toggleNavbar} className='space-around' />
 				<Collapse isOpen={!collapsed} navbar>

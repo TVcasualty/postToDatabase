@@ -23,7 +23,7 @@ const ItemModal = ({ addItem }) => {
 
 	return (
 		<div>
-			<Button color='dark' className='space-around' onClick={handleToggle}>
+			<Button color='info' size='lg' block className='space-around' onClick={handleToggle}>
 				Add Quote
 			</Button>
 
