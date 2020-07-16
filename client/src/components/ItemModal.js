@@ -28,11 +28,10 @@ const ItemModal = ({ addItem }) => {
 			</Button>
 
 			<Modal isOpen={modal} toggle={handleToggle}>
-				<ModalHeader toggle={handleToggle}>Add a quote to the list</ModalHeader>
+				<ModalHeader toggle={handleToggle}>Add a quote</ModalHeader>
 				<ModalBody>
 					<Form onSubmit={handleOnSubmit}>
 						<FormGroup>
-							{/* <Label for='item'>Item</Label> */}
 							<Input type='text' name='name' id='item' placeholder='type quote here' onChange={handleChangeName} />
 							<Button color='dark' className='space-around' block>
 								Add
