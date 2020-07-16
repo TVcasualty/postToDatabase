@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEMS_LOADING } from '../actions/actions';
 
 const initialState = {
@@ -33,7 +32,3 @@ export default function (state = initialState, action) {
 			return state;
 	}
 }
-
-export default combineReducers({
-	item: itemReducer,
-});

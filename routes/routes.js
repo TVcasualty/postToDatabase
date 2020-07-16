@@ -18,7 +18,7 @@ router.post('/', (req, res) => {
 router.delete('/:id', (req, res) => {
 	Model.findById(req.params.id)
 		.then(item => item.remove().then(() => res.json({ status: 'deleted' })))
-		.catch(err => res.status(404).json({ status: 'no item found' }));
+		.catch(err => res.status(404).json({ status: 'no quote found' }));
 });
 
 module.exports = router;
