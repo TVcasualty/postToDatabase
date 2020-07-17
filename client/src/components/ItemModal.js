@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Container } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 
@@ -22,17 +22,17 @@ const ItemModal = ({ addItem }) => {
 	};
 
 	return (
-		<div>
+		<Container>
 			<Button color='info' size='lg' block className='space-around' onClick={handleToggle}>
-				Add Quote
+				Add post
 			</Button>
 
 			<Modal isOpen={modal} toggle={handleToggle}>
-				<ModalHeader toggle={handleToggle}>Add a quote</ModalHeader>
+				<ModalHeader toggle={handleToggle}>Add a post</ModalHeader>
 				<ModalBody>
 					<Form onSubmit={handleOnSubmit}>
 						<FormGroup>
-							<Input type='text' name='name' id='item' placeholder='type a quote here' onChange={handleChangeName} />
+							<Input type='text' name='name' id='item' placeholder='type your post here' onChange={handleChangeName} />
 							<Button color='info' className='space-around' block>
 								Add
 							</Button>
@@ -40,7 +40,7 @@ const ItemModal = ({ addItem }) => {
 					</Form>
 				</ModalBody>
 			</Modal>
-		</div>
+		</Container>
 	);
 };
 

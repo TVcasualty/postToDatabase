@@ -9,17 +9,12 @@ const AppNavbar = () => {
 	return (
 		<div>
 			<Navbar color='info' dark>
-				<NavbarBrand href='/'>KanyeDB</NavbarBrand>
+				<NavbarBrand href='/'>POST TO DATABASE</NavbarBrand>
 				<NavbarToggler onClick={toggleNavbar} className='space-around' />
 				<Collapse isOpen={!collapsed} navbar>
 					<Nav className='ml-auto' navbar>
 						<NavItem>
-							<NavLink href='https://kanye.rest/' target='_blank'>
-								INSPO
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink href='https://github.com/jorgecasal/Yes-I-can' target='_blank'>
+							<NavLink href='https://github.com/jorgecasal/postToDatabase' target='_blank'>
 								REPO
 							</NavLink>
 						</NavItem>

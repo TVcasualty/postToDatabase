@@ -3,7 +3,7 @@ import { Container, ListGroupItem, ListGroup, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions';
 
-class QuoteList extends Component {
+class PostList extends Component {
 	componentDidMount() {
 		this.props.getItems();
 	}
@@ -35,4 +35,4 @@ const mapStateToProps = state => ({
 	item: state.item,
 });
 
-export default connect(mapStateToProps, { getItems, deleteItem })(QuoteList);
+export default connect(mapStateToProps, { getItems, deleteItem })(PostList);
