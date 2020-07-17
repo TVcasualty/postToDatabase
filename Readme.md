@@ -1,7 +1,7 @@
-# AuthToPost
+# POST TO DATABASE
 
-AuthToPost is a React application that can be anything you need it to be. Flexibility its AuthToPost's biggest advantage.
-User authenticationn and autorization to access a database that can be use from a bug tracker, to a todo list, to a Kanye West quote data base.
+postToDatabase is a MERN application that can be adapted to your needs. Flexibility its postToDatabase's biggest advantage.
+Simply a database that can be used as a bug tracker, a personal agenda, a todo list, or even a Kanye West quote data base.
 
 ## up and running with:
 
@@ -9,7 +9,7 @@ npm install && npm run client-install && npm run dev
 
 ## Usage
 
-sage is limitless, it can be implemented for a daily chore list, or a santa christmas-toy agenda, a ticket report log, or how about a future project board?
+Add an item to see it displayed on screen while being autmatically updated in the database. 
 
 ## Contributing
 
