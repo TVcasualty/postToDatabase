@@ -14,7 +14,7 @@ const App = ({ location }) => {
 		case '':
 			mainComponent = <LoginButton />;
 			break;
-		case 'callback':
+		case 'ac78ChdBEC7SJsd23L':
 			mainComponent = <Main />;
 			break;
 		default:

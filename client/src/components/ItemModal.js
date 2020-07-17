@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 
@@ -32,8 +32,8 @@ const ItemModal = ({ addItem }) => {
 				<ModalBody>
 					<Form onSubmit={handleOnSubmit}>
 						<FormGroup>
-							<Input type='text' name='name' id='item' placeholder='type quote here' onChange={handleChangeName} />
-							<Button color='dark' className='space-around' block>
+							<Input type='text' name='name' id='item' placeholder='type a quote here' onChange={handleChangeName} />
+							<Button color='info' className='space-around' block>
 								Add
 							</Button>
 						</FormGroup>

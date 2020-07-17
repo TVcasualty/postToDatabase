@@ -7,6 +7,7 @@ const initialState = {};
 const middleWare = [thunk];
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+// eslint-disable-next-line
 interface Window {
 	__REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
 }
