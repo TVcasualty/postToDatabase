@@ -32,7 +32,7 @@ const ItemModal = ({ addItem }) => {
 				<ModalBody>
 					<Form onSubmit={handleOnSubmit}>
 						<FormGroup>
-							<Input type='text' name='name' id='item' placeholder='type your post here' onChange={handleChangeName} />
+							<Input type='text' name='name' id='item' placeholder='type your post here' onChange={handleChangeName} required />
 							<Button color='info' className='space-around' block>
 								Add
 							</Button>
