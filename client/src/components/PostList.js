@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, ListGroupItem, ListGroup, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions';
+// import UpdateModal from './UpdateModal';
 
 class PostList extends Component {
 	componentDidMount() {
@@ -23,6 +24,7 @@ class PostList extends Component {
 								X
 							</Button>
 							{name}
+							{/* <UpdateModal /> */}
 						</ListGroupItem>
 					))}
 				</ListGroup>
