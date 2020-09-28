@@ -3,17 +3,17 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const db = process.env.DB_URI;
-const items = require('./routes/routes');
 const path = require('path');
 
 app.use(express.json());
 
 mongoose
-	.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+	.connect(db, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
 	.then(() => console.log('Connected to MongoDB'))
 	.catch(err => console.log(err));
 
-app.use('/api/items', items);
+app.use('/api/items', require('./routes/api/routes'));
+app.use('/api/users', require('./routes/api/users'));
 
 if(process.env.NODE_ENV === 'production'){
 	app.use(express.static('client/build'))
