@@ -2,7 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const db = process.env.DB_URI;
+const config = require('config');
+const db = config.get('mongoURI');
+// const db = process.env.DB_URI;
 const path = require('path');
 
 app.use(express.json());

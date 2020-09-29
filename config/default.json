@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://jorgecasal:jorgecasal@postToDB.flwhs.mongodb.net/postToDBDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "sl_myJWT"
+}
