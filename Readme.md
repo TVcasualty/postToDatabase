@@ -1,6 +1,6 @@
 # POST TO DATABASE
 
-postToDatabase is a MERN application that can be adapted to your needs. Flexibility its postToDatabase's biggest advantage.
+postToDB is a MERN application that can be adapted to your needs. Flexibility its the biggest advantage. (now implementing security)
 Simply a database that can be used as a bug tracker, a personal agenda, a todo list, or even a quote data base.
 
 ## up and running with:
