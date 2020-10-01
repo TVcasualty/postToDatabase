@@ -12,7 +12,7 @@ const auth = (req, res, next)=>{
         req.user = decoded;
     
         next();
-    } catch (err) {
+    } catch (e) {
         res.status(400).json({msg: 'Invalid token'})
     }
 };
