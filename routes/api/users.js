@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
                 name,
                 email,
                 password
-            });
+            })
 
             bcrypt.genSalt(10, (err, salt)=>{
                 bcrypt.hash(newUser.password, salt, (err, hash)=>{

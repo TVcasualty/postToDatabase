@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Model = require('../../models/Mooodel');
+const Model = require('../../models/Model');
+const auth = require('../../middleware/auth');
 
 router.get('/', (req, res) => {
 	Model.find()
@@ -8,7 +9,7 @@ router.get('/', (req, res) => {
 		.then(items => res.json(items));
 });
 
-router.post('/', (req, res) => {
+router.post('/', auth, (req, res) => {
 	const newModel = new Model({
 		name: req.body.name,
 	});
@@ -21,7 +22,7 @@ router.post('/', (req, res) => {
 // 		.catch(err => res.status(404).json({ status: 'no item found' }));
 // });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', auth, (req, res) => {
 	Model.findById(req.params.id)
 		.then(item => item.remove().then(() => res.json({ status: 'deleted' })))
 		.catch(err => res.status(404).json({ status: 'no item found' }));
